@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- sign in with google API -->
+  <meta name="google-signin-scope" content="profile email">
+  <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <title>Adludio Studio</title>
+</head>
+
+<body>
+  <div class='container-fluid'>
+    <div class="row" id="card">
+
+      <!-- login image on left side -->
+      <div class="col-5" id="login">
+        <p>REDEFINING MOBILE ADVERTISING</p>
+        <p>Please use this form to register. <br> If you are a member, please <a href="">login</a>.
+        </p>
+      </div>
+
+      <!-- register form on right side -->
+      <div class="col-7 card-body" id='register'>
+
+        <!-- Adludio logo -->
+        <img src="assets/asset3.png" alt="Adludio Studio">
+        <p>Register</p>
+
+        <!-- Register Form -->
+        <form>
+          <!-- Full Name -->
+          <div class="form-group">
+            <label for="fullName" class="placeholder">Full Name</label>
+            <input type="text" id="fullName" class="field">
+          </div>
+          <!-- Email -->
+          <div class="form-group">
+            <label for="email" class="placeholder">E-mail</label>
+            <input type="email" id="email" class="field">
+          </div>
+          <!-- Password -->
+          <div class="form-group">
+            <label for="password" class="placeholder">Password</label>
+            <input type="password" id="password" class="field">
+          </div>
+          <!-- Register Button -->
+          <div class="button">
+            <input type="submit" id="regbtn" class="btn btn-sm" value='REGISTER'>
+          </div>
+        </form>
+
+        <!-- Google Sign In button -->
+        <!-- <div class="g-signin2" data-onsuccess="onSignIn" data-longtitle="true"></div> -->
+        <div class="button align-self-center">
+          <div class="g-signin2" data-longtitle="true"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery - required for bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>

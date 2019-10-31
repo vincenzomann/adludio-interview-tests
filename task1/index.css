@@ -1,0 +1,141 @@
+body,
+html {
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Change which corners to round depending on div position */
+  #login {
+    border-radius: 15px 15px 0px 0px;
+  }
+  #register {
+    border-radius: 0px 0px 15px 15px;
+  }
+}
+
+/* tablets and bigger (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) {
+  /* Change which corners to round depending on div position */
+  #login {
+    border-radius: 15px 0px 0px 15px;
+  }
+  #register {
+    border-radius: 15px;
+  }
+}
+
+body {
+  /* background image */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("assets/asset2.png");
+}
+
+#card {
+  border: none;
+  border-radius: 25px;
+  background-color: white;
+
+  /* alignment */
+  display: flex;
+  margin: auto;
+  width: 65%;
+  margin-top: 10%;
+}
+
+#login {
+  position: relative;
+  height: auto;
+  max-height: 100%;
+
+  /* background image */
+  background-image: url("assets/asset1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* text */
+  color: white;
+  padding: 5% 4% 2% 5%;
+}
+
+#login p:first-child {
+  font-size: x-large;
+  padding-top: 15%;
+}
+#login p:last-child {
+  font-size: small;
+}
+
+#login a {
+  color: white;
+  text-decoration: underline;
+}
+
+#register {
+  position: relative;
+  height: auto;
+  max-height: 100%;
+
+  background-color: white;
+  padding: 4% 8% 2% 8%;
+}
+
+#register > img {
+  height: 50px;
+  margin: 10px 10px 10px 0px;
+}
+
+#register > p {
+  font-weight: bold;
+  color: #555555; /* Grey */
+  margin: 10px 10px 20px 0px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 12px !important;
+}
+
+/* input field styling to get label in the border */
+.form-group > label {
+  font-size: x-small;
+  padding: 0 3px;
+  position: absolute;
+  top: -8px;
+  left: 6px;
+  background-color: white;
+  color: dimgrey;
+}
+.form-group > .field {
+  width: 100%;
+  border: 1px solid gainsboro;
+  outline: none;
+  padding: 5px;
+}
+.placeholder {
+  position: relative;
+  outline: none;
+  padding: 5px;
+}
+
+#regbtn {
+  color: lightgray;
+  background-color: #8c2885; /* dark magenta */
+  border-radius: 35px;
+  border-style: none;
+  padding: 7px 17px 7px 17px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
